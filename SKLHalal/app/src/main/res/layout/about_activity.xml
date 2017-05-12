@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+
+        <Button
+            android:id="@+id/idbtnBack"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="btnClickBack"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เกี่ยวกับแอพพลิเคชัน"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/idbtnBack"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/overlay_color">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_mdn2" />
+
+        <TextView
+            android:id="@+id/tvAbout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/overlay_color"
+            android:padding="20dp"
+            android:text="แอพพลิเคชั่นนี้จัดทำขึ้นเพื่ออำนวยความสะดวกแก่นักท่องเที่ยวที่ได้มาเที่ยวในเมืองสงขลา\n\nApplication Name:\nSongkhlaHalal\n\nVersion 2.0\n\nDeveloper\nMuhammad\nWarintron"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+

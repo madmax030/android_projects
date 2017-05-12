@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/idP22"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/p22" />
+
+    <RelativeLayout
+        android:id="@+id/idActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/idbtnBack"
+            android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="btnClickBack"
+            android:background="@drawable/ic_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="มัสยิด อุสาสนอิสลาม"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_toRightOf="@id/idbtnBack"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorWhite"
+            android:layout_margin="15dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/idActionBar"
+        android:id="@+id/idlistFood"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <!-- android:layout_alignParentBottom="true" -->
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p22"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="มัสยิด อุสาสนอิสลาม(บ้านบน)"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="10"
+            android:text="ข้อมูลมัสยิด\n   เป็นมัสยิดปูนมีพัดลม สวยงาม มีผ้าละหมาดสำรองให้ มีคําภีร์อัลกรุอานให้อ่านอีกด้วย\n\n   อีหม่ามประจำมัสยิด นายสุรัตน์ หลำสุป"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- ดาว -->
+        <RelativeLayout
+            android:id="@+id/idStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <RatingBar
+                android:id="@+id/idratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="3.5"
+                android:stepSize="0.25" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/idratingBar"
+                android:onClick="onBtnClick"
+                android:text="ตรวจสอบ"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/selector_round_rect_button_pink"/>
+            <!-- android:layout_toRightOf="@id/idView" -->
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!-- Button Map&share -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idStar"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/idbtnMap"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:onClick="onBtnClickMap"
+                android:background="@drawable/selector_round_rect_button_pink"
+                android:text="แผนที่"
+                android:textColor="@color/colorWhite"
+                />
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                />
+
+            <Button
+                android:id="@+id/idbtnShare"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_round_rect_button_pink"
+                android:onClick="onBtnClickShare"
+                android:text="share"
+                android:textColor="@color/colorWhite" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

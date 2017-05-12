@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.skru.businesscomputer56.sklhalal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.TimeActivity" />
+        <activity android:name=".activity.FoodActivity" />
+        <activity android:name=".activity.PlaceActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".foodpage.Food1" />
+        <activity android:name=".foodpage.Food2" />
+        <activity android:name=".foodpage.Food3" />
+        <activity android:name=".foodpage.Food4" />
+        <activity android:name=".foodpage.Food5" />
+        <activity android:name=".foodpage.Food6" />
+        <activity android:name=".foodpage.Food7" />
+        <activity android:name=".foodpage.Food8" />
+        <activity android:name=".foodpage.Food9" />
+        <activity android:name=".foodpage.Food10" />
+        <activity android:name=".prayerpage.Place1" />
+        <activity android:name=".prayerpage.Place2" />
+        <activity android:name=".prayerpage.Place3" />
+        <activity android:name=".prayerpage.Place4" />
+        <activity android:name=".prayerpage.Place5" />
+        <activity android:name=".prayerpage.Place6" />
+        <activity android:name=".prayerpage.Place7" />
+        <activity android:name=".travelpage.Travel1" />
+        <activity android:name=".travelpage.Travel2" />
+        <activity android:name=".travelpage.Travel3" />
+        <activity android:name=".travelpage.Travel4" />
+        <activity android:name=".travelpage.Travel5" />
+        <activity android:name=".travelpage.Travel6" />
+        <activity android:name=".travelpage.Travel7" />
+        <activity android:name=".travelpage.Travel8" />
+        <activity android:name=".activity.TravelActivity">
+
+
+
+
+
+            </activity>
+    </application>
+
+</manifest>

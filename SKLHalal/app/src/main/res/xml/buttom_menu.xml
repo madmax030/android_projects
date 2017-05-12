@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+<tab
+    id="@+id/buttom_nav_item_share"
+    icon="@drawable/ic_action_share"
+    barColorWhenSelected="@color/colorPrimary"
+    title="@string/menu_bottom_nav_title_share" />
+
+</tabs>

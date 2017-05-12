@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Songkhla Halal</string>
+    <!--<string name="title_activity_maps">Map</string>-->
+    <string name="map_type_none">None</string>
+    <string name="map_type_normal">Normal</string>
+    <string name="map_type_terrain">Terrain</string>
+    <string name="map_type_satellite">Satellite</string>
+    <string name="map_type_hybrid">Hybrid</string>
+
+    <string name="app_page_food">ร้านอาหาร</string>
+    <string name="open_drawer">Open Menu</string>
+    <string name="close_drawer">Close Menu</string>
+    <string name="menu_bottom_nav_title_share">share</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_about">เกี่ยวกับแอพพลิเคชั่น</string>
+
+    <string-array name="link">
+        <item>https://goo.gl/gNzl3f</item>
+        <item>https://plus.google.com/u/5/113138515708258548243</item>
+        <item>http://line.me/ti/p/EbsP60mN4S</item>
+
+    </string-array>
+</resources>
